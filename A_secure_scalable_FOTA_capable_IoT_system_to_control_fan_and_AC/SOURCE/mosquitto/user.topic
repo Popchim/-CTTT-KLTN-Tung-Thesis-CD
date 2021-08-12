@@ -1,0 +1,45 @@
+user admin
+topic #
+user reader
+topic read #
+user writer
+topic write #
+
+user raspi
+topic read ID
+topic read Version/#
+topic read Temperature/#
+topic read Humidity/#
+topic read Lighting/#
+topic read Motion/#
+topic read Fan/#
+topic read Fan-ready/#
+topic read Fan-busy/#
+topic read Aircon/#
+topic read Aircon-ready/#
+topic read Aircon-busy/#
+topic read Connection/#
+topic write Fan-control/#
+topic write Aircon-control/#
+topic write Reset-control/#
+topic write Ota-control
+
+user esp32
+topic write ID
+topic read Ota-control
+
+pattern write Version/%c
+pattern write Temperature/%c
+pattern write Humidity/%c
+pattern write Lighting/%c
+pattern write Motion/%c
+pattern write Fan/%c
+pattern write Fan-ready/%c
+pattern write Fan-busy/%c
+pattern write Aircon/%c
+pattern write Aircon-ready/%c
+pattern write Aircon-busy/%c
+pattern write Connection/%c
+pattern read Fan-control/%c
+pattern read Aircon-control/%c
+pattern read Reset-control/%c

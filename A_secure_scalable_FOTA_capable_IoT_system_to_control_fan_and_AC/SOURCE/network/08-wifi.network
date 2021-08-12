@@ -1,0 +1,10 @@
+[Match]
+Name=wl*
+[Network]
+LLMNR=no
+MulticastDNS=yes
+# If you need a static ip address, then toggle commenting next four lines (example)
+DHCP=yes
+#Address=192.168.50.60/24
+#Gateway=192.168.50.1
+#DNS=84.200.69.80 1.1.1.1

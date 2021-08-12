@@ -1,0 +1,3160 @@
+{
+    "id": "61849262.ed701c IDENTIFIER",
+    "label": "Unit Prototype",
+    "disabled": false,
+    "info": "",
+    "nodes": [
+        {
+            "id": "3918d584.1484ca IDENTIFIER",
+            "type": "mqtt out",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Fan-control",
+            "topic": "Fan-control/IDENTIFIER",
+            "qos": "1",
+            "retain": "false",
+            "respTopic": "",
+            "contentType": "",
+            "userProps": "",
+            "correl": "",
+            "expiry": "",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "x": 1290,
+            "y": 780,
+            "wires": []
+        },
+        {
+            "id": "9ec47efb.08cb1 IDENTIFIER",
+            "type": "mqtt out",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Aircon-control",
+            "topic": "Aircon-control/IDENTIFIER",
+            "qos": "1",
+            "retain": "false",
+            "respTopic": "",
+            "contentType": "",
+            "userProps": "",
+            "correl": "",
+            "expiry": "",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "x": 1280,
+            "y": 840,
+            "wires": []
+        },
+        {
+            "id": "4212ca8c.46b8b4 IDENTIFIER",
+            "type": "mqtt out",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Reset-control",
+            "topic": "Reset-control/IDENTIFIER",
+            "qos": "1",
+            "retain": "false",
+            "respTopic": "",
+            "contentType": "",
+            "userProps": "",
+            "correl": "",
+            "expiry": "",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "x": 1290,
+            "y": 140,
+            "wires": []
+        },
+        {
+            "id": "93b3fa91.d36be8 IDENTIFIER",
+            "type": "ui_text",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "a8e3df71.38f158 IDENTIFIER",
+            "order": 2,
+            "width": "0",
+            "height": "0",
+            "name": "Version 1",
+            "label": "Current",
+            "format": "{{msg.payload}}",
+            "layout": "row-spread",
+            "x": 1080,
+            "y": 40,
+            "wires": []
+        },
+        {
+            "id": "c13df621.781f98 IDENTIFIER",
+            "type": "ui_chart",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Last 10 minutes 1",
+            "group": "77eac150.539df IDENTIFIER",
+            "order": 3,
+            "width": "17",
+            "height": "3",
+            "label": "Last 10 minutes",
+            "chartType": "line",
+            "legend": "false",
+            "xformat": "HH:mm:ss",
+            "interpolate": "linear",
+            "nodata": "No data yet",
+            "dot": false,
+            "ymin": "25",
+            "ymax": "35",
+            "removeOlder": "10",
+            "removeOlderPoints": "",
+            "removeOlderUnit": "60",
+            "cutout": 0,
+            "useOneColor": false,
+            "useUTC": false,
+            "colors": [
+                "#1f77b4",
+                "#aec7e8",
+                "#ff7f0e",
+                "#2ca02c",
+                "#98df8a",
+                "#d62728",
+                "#ff9896",
+                "#9467bd",
+                "#c5b0d5"
+            ],
+            "outputs": 1,
+            "useDifferentColor": false,
+            "x": 1110,
+            "y": 420,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "af4a0bfb.d91268 IDENTIFIER",
+            "type": "ui_gauge",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Gauge 3",
+            "group": "3c989f2b.51439 IDENTIFIER",
+            "order": 3,
+            "width": "17",
+            "height": "3",
+            "gtype": "gage",
+            "title": "",
+            "label": "",
+            "format": "{{value}}",
+            "min": 0,
+            "max": "1",
+            "colors": [
+                "#bebebe",
+                "#ffd311",
+                "#ffd311"
+            ],
+            "seg1": "",
+            "seg2": "",
+            "x": 1080,
+            "y": 580,
+            "wires": []
+        },
+        {
+            "id": "9dde39e7.b60818 IDENTIFIER",
+            "type": "ui_gauge",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Gauge 4",
+            "group": "d2753126.a608f IDENTIFIER",
+            "order": 3,
+            "width": "17",
+            "height": "3",
+            "gtype": "gage",
+            "title": "",
+            "label": "",
+            "format": "{{value}}",
+            "min": 0,
+            "max": "1",
+            "colors": [
+                "#bebebe",
+                "#dfa1a1",
+                "#dfa1a1"
+            ],
+            "seg1": "",
+            "seg2": "",
+            "x": 1080,
+            "y": 660,
+            "wires": []
+        },
+        {
+            "id": "aba32d32.c2695 IDENTIFIER",
+            "type": "ui_gauge",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Gauge 1",
+            "group": "60b0ef44.4985a8 IDENTIFIER",
+            "order": 3,
+            "width": "17",
+            "height": "3",
+            "gtype": "gage",
+            "title": "",
+            "label": "",
+            "format": "{{value}}",
+            "min": 0,
+            "max": "1",
+            "colors": [
+                "#bebebe",
+                "#a1c057",
+                "#a1c057"
+            ],
+            "seg1": "",
+            "seg2": "",
+            "x": 1080,
+            "y": 180,
+            "wires": []
+        },
+        {
+            "id": "98abef5e.15154 IDENTIFIER",
+            "type": "ui_switch",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Desired State 1",
+            "label": "Desired State",
+            "tooltip": "",
+            "group": "60b0ef44.4985a8 IDENTIFIER",
+            "order": 5,
+            "width": 0,
+            "height": 0,
+            "passthru": true,
+            "decouple": "false",
+            "topic": "topic",
+            "topicType": "msg",
+            "style": "",
+            "onvalue": "1",
+            "onvalueType": "str",
+            "onicon": "",
+            "oncolor": "",
+            "offvalue": "0",
+            "offvalueType": "str",
+            "officon": "",
+            "offcolor": "",
+            "animate": false,
+            "x": 1100,
+            "y": 780,
+            "wires": [
+                [
+                    "3918d584.1484ca IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "ff1e3398.2eb27 IDENTIFIER",
+            "type": "ui_switch",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Desired State 2",
+            "label": "Desired State",
+            "tooltip": "",
+            "group": "f8fddd42.cb90e8 IDENTIFIER",
+            "order": 5,
+            "width": 0,
+            "height": 0,
+            "passthru": true,
+            "decouple": "false",
+            "topic": "topic",
+            "topicType": "msg",
+            "style": "",
+            "onvalue": "1",
+            "onvalueType": "str",
+            "onicon": "",
+            "oncolor": "",
+            "offvalue": "0",
+            "offvalueType": "str",
+            "officon": "",
+            "offcolor": "",
+            "animate": false,
+            "x": 1100,
+            "y": 840,
+            "wires": [
+                [
+                    "9ec47efb.08cb1 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "cb619b11.a8e058 IDENTIFIER",
+            "type": "ui_button",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Reset 0",
+            "group": "fac9ed79.7aeff IDENTIFIER",
+            "order": 2,
+            "width": "17",
+            "height": "1",
+            "passthru": false,
+            "label": "Reset esp32",
+            "tooltip": "",
+            "color": "",
+            "bgcolor": "",
+            "icon": "",
+            "payload": "1",
+            "payloadType": "str",
+            "topic": "topic",
+            "topicType": "msg",
+            "x": 1080,
+            "y": 140,
+            "wires": [
+                [
+                    "4212ca8c.46b8b4 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "b994cd9c.a7f4e IDENTIFIER",
+            "type": "ui_text",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "3c989f2b.51439 IDENTIFIER",
+            "order": 4,
+            "width": "0",
+            "height": "0",
+            "name": "State 1",
+            "label": "State",
+            "format": "{{value==\"1\"?\"ON\":\"OFF\"}}",
+            "layout": "row-spread",
+            "x": 1080,
+            "y": 620,
+            "wires": []
+        },
+        {
+            "id": "6c0c243e.868b9c IDENTIFIER",
+            "type": "ui_text",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "d2753126.a608f IDENTIFIER",
+            "order": 4,
+            "width": "0",
+            "height": "0",
+            "name": "",
+            "label": "Detected",
+            "format": "{{value==\"1\"?\"YES\":\"NO\"}}",
+            "layout": "row-spread",
+            "x": 1080,
+            "y": 700,
+            "wires": []
+        },
+        {
+            "id": "6894d57a.b0173c IDENTIFIER",
+            "type": "ui_text",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "60b0ef44.4985a8 IDENTIFIER",
+            "order": 4,
+            "width": "0",
+            "height": "0",
+            "name": "Current State 1",
+            "label": "Current State",
+            "format": "{{value==\"1\"?\"ON\":\"OFF\"}}",
+            "layout": "row-spread",
+            "x": 1100,
+            "y": 220,
+            "wires": []
+        },
+        {
+            "id": "194cb03c.8f39a IDENTIFIER",
+            "type": "ui_gauge",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Gauge 2",
+            "group": "f8fddd42.cb90e8 IDENTIFIER",
+            "order": 3,
+            "width": "17",
+            "height": "3",
+            "gtype": "gage",
+            "title": "",
+            "label": "",
+            "format": "{{value}}",
+            "min": 0,
+            "max": "1",
+            "colors": [
+                "#bebebe",
+                "#a9dcf5",
+                "#a9dcf5"
+            ],
+            "seg1": "",
+            "seg2": "",
+            "x": 1080,
+            "y": 300,
+            "wires": []
+        },
+        {
+            "id": "4d55f479.cdfdac IDENTIFIER",
+            "type": "ui_text",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "f8fddd42.cb90e8 IDENTIFIER",
+            "order": 4,
+            "width": "0",
+            "height": "0",
+            "name": "Current State 2",
+            "label": "Current State",
+            "format": "{{value==\"1\"?\"ON\":\"OFF\"}}",
+            "layout": "row-spread",
+            "x": 1100,
+            "y": 340,
+            "wires": []
+        },
+        {
+            "id": "eb74ad7e.f0119 IDENTIFIER",
+            "type": "subflow:166dcf67.3850c1",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Initial value 1",
+            "env": [],
+            "x": 390,
+            "y": 100,
+            "wires": [
+                [
+                    "98abef5e.15154 IDENTIFIER"
+                ]
+            ],
+            "subflow": "166dcf67.3850c1"
+        },
+        {
+            "id": "acb3be15.78b4b IDENTIFIER",
+            "type": "subflow:166dcf67.3850c1",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Initial value 2",
+            "env": [],
+            "x": 390,
+            "y": 140,
+            "wires": [
+                [
+                    "ff1e3398.2eb27 IDENTIFIER"
+                ]
+            ],
+            "subflow": "166dcf67.3850c1"
+        },
+        {
+            "id": "13e198a9.396e77 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Set 1",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "complete",
+                    "pt": "msg",
+                    "to": "true",
+                    "tot": "bool"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 110,
+            "y": 100,
+            "wires": [
+                [
+                    "eb74ad7e.f0119 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "b1c7521d.788ec IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Set 2",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "complete",
+                    "pt": "msg",
+                    "to": "true",
+                    "tot": "bool"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 110,
+            "y": 140,
+            "wires": [
+                [
+                    "acb3be15.78b4b IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "8efb905a.2b1c1 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Disable",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "enabled",
+                    "pt": "msg",
+                    "to": "false",
+                    "tot": "bool"
+                },
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "0",
+                    "tot": "str"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 400,
+            "y": 900,
+            "wires": [
+                [
+                    "93b3fa91.d36be8 IDENTIFIER",
+                    "cb619b11.a8e058 IDENTIFIER",
+                    "aba32d32.c2695 IDENTIFIER",
+                    "6894d57a.b0173c IDENTIFIER",
+                    "194cb03c.8f39a IDENTIFIER",
+                    "4d55f479.cdfdac IDENTIFIER",
+                    "c13df621.781f98 IDENTIFIER",
+                    "af4a0bfb.d91268 IDENTIFIER",
+                    "b994cd9c.a7f4e IDENTIFIER",
+                    "9dde39e7.b60818 IDENTIFIER",
+                    "6c0c243e.868b9c IDENTIFIER",
+                    "6c0c8381.ed1eec IDENTIFIER",
+                    "98abef5e.15154 IDENTIFIER",
+                    "ff1e3398.2eb27 IDENTIFIER",
+                    "52d1646d.5b57fc IDENTIFIER",
+                    "4191f0ff.567ee IDENTIFIER",
+                    "a28a7763.f34a08 IDENTIFIER",
+                    "e7e15de2.21522 IDENTIFIER",
+                    "48dcc0b3.c111a IDENTIFIER",
+                    "87d1ede0.f5e4 IDENTIFIER",
+                    "8251cca2.67a53 IDENTIFIER",
+                    "1141137c.c301ed IDENTIFIER",
+                    "2efaa808.646778 IDENTIFIER",
+                    "55579bd9.65fea4 IDENTIFIER",
+                    "aa2042ae.cf914 IDENTIFIER",
+                    "a5b3a4b5.e250f8 IDENTIFIER",
+                    "4601309a.d8c5f IDENTIFIER",
+                    "76b8e353.afe40c IDENTIFIER",
+                    "73cea19e.6c85d IDENTIFIER",
+                    "408f0cbf.57d724 IDENTIFIER",
+                    "bcc5a9b7.23c778 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "813fb17c.85995 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Enable 1",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "enabled",
+                    "pt": "msg",
+                    "to": "true",
+                    "tot": "bool"
+                },
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "0",
+                    "tot": "str"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 400,
+            "y": 40,
+            "wires": [
+                [
+                    "cb619b11.a8e058 IDENTIFIER",
+                    "c13df621.781f98 IDENTIFIER",
+                    "af4a0bfb.d91268 IDENTIFIER",
+                    "b994cd9c.a7f4e IDENTIFIER",
+                    "9dde39e7.b60818 IDENTIFIER",
+                    "6c0c243e.868b9c IDENTIFIER",
+                    "6c0c8381.ed1eec IDENTIFIER",
+                    "a28a7763.f34a08 IDENTIFIER",
+                    "48dcc0b3.c111a IDENTIFIER",
+                    "e7e15de2.21522 IDENTIFIER",
+                    "87d1ede0.f5e4 IDENTIFIER",
+                    "2efaa808.646778 IDENTIFIER",
+                    "55579bd9.65fea4 IDENTIFIER",
+                    "4601309a.d8c5f IDENTIFIER",
+                    "76b8e353.afe40c IDENTIFIER",
+                    "bcc5a9b7.23c778 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "3cad8e67.96a372 IDENTIFIER",
+            "type": "inject",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Initially disconnected",
+            "props": [
+                {
+                    "p": "payload"
+                }
+            ],
+            "repeat": "",
+            "crontab": "",
+            "once": true,
+            "onceDelay": "0",
+            "topic": "",
+            "payload": "0",
+            "payloadType": "str",
+            "x": 180,
+            "y": 960,
+            "wires": [
+                [
+                    "8efb905a.2b1c1 IDENTIFIER",
+                    "afd5b603.24a768 IDENTIFIER",
+                    "dedbdec6.d7067 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "2e622328.b223cc IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Enable 2",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "enabled",
+                    "pt": "msg",
+                    "to": "true",
+                    "tot": "bool"
+                },
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "0",
+                    "tot": "str"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 400,
+            "y": 780,
+            "wires": [
+                [
+                    "98abef5e.15154 IDENTIFIER",
+                    "aba32d32.c2695 IDENTIFIER",
+                    "6894d57a.b0173c IDENTIFIER",
+                    "52d1646d.5b57fc IDENTIFIER",
+                    "73cea19e.6c85d IDENTIFIER",
+                    "8251cca2.67a53 IDENTIFIER",
+                    "aa2042ae.cf914 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "a42a816e.262 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Enable 3",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "enabled",
+                    "pt": "msg",
+                    "to": "true",
+                    "tot": "bool"
+                },
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "0",
+                    "tot": "str"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 400,
+            "y": 840,
+            "wires": [
+                [
+                    "ff1e3398.2eb27 IDENTIFIER",
+                    "194cb03c.8f39a IDENTIFIER",
+                    "4d55f479.cdfdac IDENTIFIER",
+                    "4191f0ff.567ee IDENTIFIER",
+                    "1141137c.c301ed IDENTIFIER",
+                    "a5b3a4b5.e250f8 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "88ac106.7bc1bf IDENTIFIER",
+            "type": "ui_text",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "6e854e20.0c9b58 IDENTIFIER",
+            "order": 3,
+            "width": 0,
+            "height": 0,
+            "name": "State 2",
+            "label": "State",
+            "format": "{{msg.payload == true ? \"Connected\" : \"Disconnected\"}}",
+            "layout": "row-spread",
+            "x": 1300,
+            "y": 740,
+            "wires": []
+        },
+        {
+            "id": "6c0c8381.ed1eec IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Connection 1",
+            "rules": [
+                {
+                    "t": "move",
+                    "p": "enabled",
+                    "pt": "msg",
+                    "to": "payload",
+                    "tot": "msg"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 1090,
+            "y": 740,
+            "wires": [
+                [
+                    "88ac106.7bc1bf IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "52d1646d.5b57fc IDENTIFIER",
+            "type": "ui_text",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "60b0ef44.4985a8 IDENTIFIER",
+            "order": 6,
+            "width": 0,
+            "height": 0,
+            "name": "Busy 1",
+            "label": "Busy",
+            "format": "{{msg.payload}}",
+            "layout": "row-spread",
+            "x": 1070,
+            "y": 260,
+            "wires": []
+        },
+        {
+            "id": "4191f0ff.567ee IDENTIFIER",
+            "type": "ui_text",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "f8fddd42.cb90e8 IDENTIFIER",
+            "order": 6,
+            "width": 0,
+            "height": 0,
+            "name": "Busy 2",
+            "label": "Busy",
+            "format": "{{msg.payload}}",
+            "layout": "row-spread",
+            "x": 1070,
+            "y": 380,
+            "wires": []
+        },
+        {
+            "id": "a28a7763.f34a08 IDENTIFIER",
+            "type": "ui_chart",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Last 10 minutes 2",
+            "group": "61e7bea4.b3a398 IDENTIFIER",
+            "order": 3,
+            "width": "17",
+            "height": "3",
+            "label": "Last 10 minutes",
+            "chartType": "line",
+            "legend": "false",
+            "xformat": "HH:mm:ss",
+            "interpolate": "linear",
+            "nodata": "No data yet",
+            "dot": false,
+            "ymin": "0",
+            "ymax": "100",
+            "removeOlder": "10",
+            "removeOlderPoints": "",
+            "removeOlderUnit": "60",
+            "cutout": 0,
+            "useOneColor": false,
+            "useUTC": false,
+            "colors": [
+                "#1f77b4",
+                "#aec7e8",
+                "#ff7f0e",
+                "#2ca02c",
+                "#98df8a",
+                "#d62728",
+                "#ff9896",
+                "#9467bd",
+                "#c5b0d5"
+            ],
+            "outputs": 1,
+            "useDifferentColor": false,
+            "x": 1110,
+            "y": 500,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "97d714ea.01ee88 IDENTIFIER",
+            "type": "ui_text",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "61e7bea4.b3a398 IDENTIFIER",
+            "order": 4,
+            "width": "0",
+            "height": "0",
+            "name": "Current 2",
+            "label": "Current",
+            "format": "{{msg.payload + \" %\"}}",
+            "layout": "row-spread",
+            "x": 1300,
+            "y": 520,
+            "wires": []
+        },
+        {
+            "id": "9bee935d.cbe62 IDENTIFIER",
+            "type": "join",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Join",
+            "mode": "custom",
+            "build": "array",
+            "property": "payload",
+            "propertyType": "msg",
+            "key": "topic",
+            "joiner": " ",
+            "joinerType": "str",
+            "accumulate": false,
+            "timeout": "",
+            "count": "2",
+            "reduceRight": false,
+            "reduceExp": "",
+            "reduceInit": "",
+            "reduceInitType": "num",
+            "reduceFixup": "",
+            "x": 1310,
+            "y": 580,
+            "wires": [
+                [
+                    "60d4b8da.799de8 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "60d4b8da.799de8 IDENTIFIER",
+            "type": "func",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Calculate",
+            "content": "t = parseFloat(msg.payload[0])\nrh = parseFloat(msg.payload[1])\nmod = f.get('modifier')\nb = 18.678\nc = 257.14\nd = 234.5\ny = Math.log(rh/100*Math.exp((b-t/d)*(t/(c+t))))\ndp = c*y/(b-y)\npl(dp + mod)",
+            "x": 400,
+            "y": 1060,
+            "wires": [
+                [
+                    "e7e15de2.21522 IDENTIFIER",
+                    "c799d279.7f6f2 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "c799d279.7f6f2 IDENTIFIER",
+            "type": "switch",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "MUX 1",
+            "property": "payload",
+            "propertyType": "msg",
+            "rules": [
+                {
+                    "t": "lt",
+                    "v": "10",
+                    "vt": "num"
+                },
+                {
+                    "t": "lt",
+                    "v": "16",
+                    "vt": "str"
+                },
+                {
+                    "t": "lt",
+                    "v": "19",
+                    "vt": "str"
+                },
+                {
+                    "t": "lt",
+                    "v": "22",
+                    "vt": "str"
+                },
+                {
+                    "t": "else"
+                }
+            ],
+            "checkall": "false",
+            "repair": false,
+            "outputs": 5,
+            "x": 410,
+            "y": 1120,
+            "wires": [
+                [
+                    "7025f3af.616f3c IDENTIFIER"
+                ],
+                [
+                    "43340fe9.cdb7e IDENTIFIER"
+                ],
+                [
+                    "6f6fecb9.8ca2d4 IDENTIFIER"
+                ],
+                [
+                    "e05cad98.2e554 IDENTIFIER"
+                ],
+                [
+                    "f6b962f3.1e0f8 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "7025f3af.616f3c IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Dry",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "Dry",
+                    "tot": "str"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 610,
+            "y": 1160,
+            "wires": [
+                [
+                    "48dcc0b3.c111a IDENTIFIER",
+                    "ec91fdf7.b1abf IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "43340fe9.cdb7e IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Comfortable",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "Comfortable",
+                    "tot": "str"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 630,
+            "y": 1200,
+            "wires": [
+                [
+                    "48dcc0b3.c111a IDENTIFIER",
+                    "532055b6.f02a5c IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "6f6fecb9.8ca2d4 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Alright",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "Alright",
+                    "tot": "str"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 610,
+            "y": 1240,
+            "wires": [
+                [
+                    "48dcc0b3.c111a IDENTIFIER",
+                    "532055b6.f02a5c IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "e05cad98.2e554 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Uncomfortable",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "Uncomfortable",
+                    "tot": "str"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 640,
+            "y": 1280,
+            "wires": [
+                [
+                    "48dcc0b3.c111a IDENTIFIER",
+                    "4ce365e7.58416c IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "f6b962f3.1e0f8 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Very Uncomfortable",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "Dry",
+                    "tot": "str"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 650,
+            "y": 1320,
+            "wires": [
+                [
+                    "48dcc0b3.c111a IDENTIFIER",
+                    "4ce365e7.58416c IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "e7e15de2.21522 IDENTIFIER",
+            "type": "ui_gauge",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Gauge 5",
+            "group": "9c104cdc.5f6168 IDENTIFIER",
+            "order": 3,
+            "width": "17",
+            "height": "3",
+            "gtype": "gage",
+            "title": "Dew Point",
+            "label": "°C",
+            "format": "{{value}}",
+            "min": "7",
+            "max": "29",
+            "colors": [
+                "#7dc6e2",
+                "#00b500",
+                "#ca3838"
+            ],
+            "seg1": "10",
+            "seg2": "18",
+            "x": 1080,
+            "y": 900,
+            "wires": []
+        },
+        {
+            "id": "48dcc0b3.c111a IDENTIFIER",
+            "type": "ui_text",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "9c104cdc.5f6168 IDENTIFIER",
+            "order": 4,
+            "width": 0,
+            "height": 0,
+            "name": "Comfortability 0",
+            "label": "Comfort Level",
+            "format": "{{msg.payload}}",
+            "layout": "row-spread",
+            "x": 1100,
+            "y": 940,
+            "wires": []
+        },
+        {
+            "id": "8600b4f.b323148 IDENTIFIER",
+            "type": "subflow:a17da43e.190208",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "",
+            "env": [],
+            "x": 390,
+            "y": 640,
+            "wires": [
+                [
+                    "87d1ede0.f5e4 IDENTIFIER",
+                    "55579bd9.65fea4 IDENTIFIER"
+                ]
+            ],
+            "subflow": "a17da43e.190208"
+        },
+        {
+            "id": "4d00341c.2cbf3c IDENTIFIER",
+            "type": "subflow:166dcf67.3850c1",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Initial value 3",
+            "env": [],
+            "x": 390,
+            "y": 740,
+            "wires": [
+                [
+                    "87d1ede0.f5e4 IDENTIFIER",
+                    "55579bd9.65fea4 IDENTIFIER"
+                ]
+            ],
+            "subflow": "166dcf67.3850c1"
+        },
+        {
+            "id": "3aef38ff.e35ad8 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Set 3",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "complete",
+                    "pt": "msg",
+                    "to": "true",
+                    "tot": "bool"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 110,
+            "y": 740,
+            "wires": [
+                [
+                    "4d00341c.2cbf3c IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "87d1ede0.f5e4 IDENTIFIER",
+            "type": "ui_gauge",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Gauge 6",
+            "group": "d86b91c0.dd5a2 IDENTIFIER",
+            "order": 3,
+            "width": "17",
+            "height": "3",
+            "gtype": "gage",
+            "title": "",
+            "label": "",
+            "format": "{{value}}",
+            "min": 0,
+            "max": "1",
+            "colors": [
+                "#bebebe",
+                "#f5ded6",
+                "#f5ded6"
+            ],
+            "seg1": "",
+            "seg2": "",
+            "x": 1080,
+            "y": 980,
+            "wires": []
+        },
+        {
+            "id": "73cea19e.6c85d IDENTIFIER",
+            "type": "ui_switch",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Switch",
+            "label": "{{msg.payload == \"1\" ? \"Auto\" : \"Manual\"}}",
+            "tooltip": "",
+            "group": "4b977bdc.8b6e04 IDENTIFIER",
+            "order": 3,
+            "width": "0",
+            "height": "0",
+            "passthru": false,
+            "decouple": "false",
+            "topic": "topic",
+            "topicType": "msg",
+            "style": "",
+            "onvalue": "1",
+            "onvalueType": "str",
+            "onicon": "",
+            "oncolor": "",
+            "offvalue": "0",
+            "offvalueType": "str",
+            "officon": "",
+            "offcolor": "",
+            "animate": false,
+            "x": 1070,
+            "y": 1060,
+            "wires": [
+                [
+                    "64904921.ba6e48 IDENTIFIER",
+                    "408f0cbf.57d724 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "64904921.ba6e48 IDENTIFIER",
+            "type": "function",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Dynamic Labelling",
+            "func": "return msg;",
+            "outputs": 1,
+            "noerr": 0,
+            "initialize": "",
+            "finalize": "",
+            "libs": [],
+            "x": 1270,
+            "y": 1060,
+            "wires": [
+                [
+                    "73cea19e.6c85d IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "ec91fdf7.b1abf IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Cold",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "cold",
+                    "tot": "str"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 1070,
+            "y": 1420,
+            "wires": [
+                [
+                    "af62c309.498b4 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "532055b6.f02a5c IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Good",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "good",
+                    "tot": "str"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 1070,
+            "y": 1460,
+            "wires": [
+                [
+                    "af62c309.498b4 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "4ce365e7.58416c IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Hot",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "hot",
+                    "tot": "str"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 1070,
+            "y": 1500,
+            "wires": [
+                [
+                    "af62c309.498b4 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "408f0cbf.57d724 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Auto",
+            "rules": [
+                {
+                    "t": "move",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "auto",
+                    "tot": "flow"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 1070,
+            "y": 1120,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "67ff015.20bee IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Human 0",
+            "rules": [
+                {
+                    "t": "move",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "human",
+                    "tot": "flow"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 1080,
+            "y": 1160,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "af62c309.498b4 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Dew",
+            "rules": [
+                {
+                    "t": "move",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "dew",
+                    "tot": "flow"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 1310,
+            "y": 1420,
+            "wires": [
+                [
+                    "de0d37d7.c64778 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "8251cca2.67a53 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Fan 1",
+            "rules": [
+                {
+                    "t": "move",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "fan",
+                    "tot": "flow"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 1070,
+            "y": 1240,
+            "wires": [
+                [
+                    "11b49878.983e38 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "2efaa808.646778 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Light",
+            "rules": [
+                {
+                    "t": "move",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "light",
+                    "tot": "flow"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 1070,
+            "y": 1200,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "1141137c.c301ed IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Aircon 1",
+            "rules": [
+                {
+                    "t": "move",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "aircon",
+                    "tot": "flow"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 1080,
+            "y": 1320,
+            "wires": [
+                [
+                    "11b49878.983e38 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "a84b7f30.396b9 IDENTIFIER",
+            "type": "ui_text",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "d86b91c0.dd5a2 IDENTIFIER",
+            "order": 4,
+            "width": "0",
+            "height": "0",
+            "name": "Human Presence",
+            "label": "Present",
+            "format": "{{value == \"1\" ? \"YES\" : \"NO\"}}",
+            "layout": "row-spread",
+            "x": 1270,
+            "y": 1020,
+            "wires": []
+        },
+        {
+            "id": "55579bd9.65fea4 IDENTIFIER",
+            "type": "function",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Buffer 3",
+            "func": "return msg;",
+            "outputs": 1,
+            "noerr": 0,
+            "initialize": "",
+            "finalize": "",
+            "libs": [],
+            "x": 1080,
+            "y": 1020,
+            "wires": [
+                [
+                    "a84b7f30.396b9 IDENTIFIER",
+                    "67ff015.20bee IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "aa2042ae.cf914 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Fan-busy 1",
+            "rules": [
+                {
+                    "t": "move",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "fanbusy",
+                    "tot": "flow"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 1090,
+            "y": 1280,
+            "wires": [
+                [
+                    "b6d46cb2.d53ff IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "a5b3a4b5.e250f8 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Aircon-busy 1",
+            "rules": [
+                {
+                    "t": "move",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "airconbusy",
+                    "tot": "flow"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 1100,
+            "y": 1360,
+            "wires": [
+                [
+                    "b6d46cb2.d53ff IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "9cdcb127.01c5 IDENTIFIER",
+            "type": "switch",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Auto gating 1",
+            "property": "auto",
+            "propertyType": "flow",
+            "rules": [
+                {
+                    "t": "eq",
+                    "v": "1",
+                    "vt": "str"
+                }
+            ],
+            "checkall": "true",
+            "repair": false,
+            "outputs": 1,
+            "x": 850,
+            "y": 1460,
+            "wires": [
+                [
+                    "98abef5e.15154 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "99840d42.3c847 IDENTIFIER",
+            "type": "switch",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Auto gating 2",
+            "property": "auto",
+            "propertyType": "flow",
+            "rules": [
+                {
+                    "t": "eq",
+                    "v": "1",
+                    "vt": "str"
+                }
+            ],
+            "checkall": "true",
+            "repair": false,
+            "outputs": 1,
+            "x": 850,
+            "y": 1500,
+            "wires": [
+                [
+                    "ff1e3398.2eb27 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "46e51088.3477c IDENTIFIER",
+            "type": "switch",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Auto gating 3",
+            "property": "auto",
+            "propertyType": "flow",
+            "rules": [
+                {
+                    "t": "eq",
+                    "v": "1",
+                    "vt": "str"
+                }
+            ],
+            "checkall": "true",
+            "repair": false,
+            "outputs": 1,
+            "x": 850,
+            "y": 1540,
+            "wires": [
+                [
+                    "71d2788d.8210a8 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "55b63b5.6ec83c4 IDENTIFIER",
+            "type": "switch",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Facbusy gating 1",
+            "property": "facbusy",
+            "propertyType": "flow",
+            "rules": [
+                {
+                    "t": "eq",
+                    "v": "0",
+                    "vt": "str"
+                }
+            ],
+            "checkall": "true",
+            "repair": false,
+            "outputs": 1,
+            "x": 650,
+            "y": 1460,
+            "wires": [
+                [
+                    "9cdcb127.01c5 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "7cb13a7e.a21fe4 IDENTIFIER",
+            "type": "switch",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Facbusy gating 2",
+            "property": "facbusy",
+            "propertyType": "flow",
+            "rules": [
+                {
+                    "t": "eq",
+                    "v": "0",
+                    "vt": "str"
+                }
+            ],
+            "checkall": "true",
+            "repair": false,
+            "outputs": 1,
+            "x": 650,
+            "y": 1500,
+            "wires": [
+                [
+                    "99840d42.3c847 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "e0efb332.2abc7 IDENTIFIER",
+            "type": "switch",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Facbusy gating 3",
+            "property": "facbusy",
+            "propertyType": "flow",
+            "rules": [
+                {
+                    "t": "eq",
+                    "v": "0",
+                    "vt": "str"
+                }
+            ],
+            "checkall": "true",
+            "repair": false,
+            "outputs": 1,
+            "x": 650,
+            "y": 1540,
+            "wires": [
+                [
+                    "46e51088.3477c IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "2bf79970.26c4c6 IDENTIFIER",
+            "type": "switch",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Busy gating 1",
+            "property": "busy",
+            "propertyType": "flow",
+            "rules": [
+                {
+                    "t": "eq",
+                    "v": "0",
+                    "vt": "str"
+                }
+            ],
+            "checkall": "true",
+            "repair": false,
+            "outputs": 1,
+            "x": 380,
+            "y": 1460,
+            "wires": [
+                [
+                    "55b63b5.6ec83c4 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "d37f8230.fc1c5 IDENTIFIER",
+            "type": "switch",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Busy gating 2",
+            "property": "busy",
+            "propertyType": "flow",
+            "rules": [
+                {
+                    "t": "eq",
+                    "v": "0",
+                    "vt": "str"
+                }
+            ],
+            "checkall": "true",
+            "repair": false,
+            "outputs": 1,
+            "x": 380,
+            "y": 1500,
+            "wires": [
+                [
+                    "7cb13a7e.a21fe4 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "4dbf8f6b.2210f IDENTIFIER",
+            "type": "switch",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Busy gating 3",
+            "property": "busy",
+            "propertyType": "flow",
+            "rules": [
+                {
+                    "t": "eq",
+                    "v": "0",
+                    "vt": "str"
+                }
+            ],
+            "checkall": "true",
+            "repair": false,
+            "outputs": 1,
+            "x": 380,
+            "y": 1540,
+            "wires": [
+                [
+                    "e0efb332.2abc7 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "966f5c11.c7cd1 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Busy OFF",
+            "rules": [
+                {
+                    "t": "move",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "busy",
+                    "tot": "flow"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 1300,
+            "y": 1500,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "a1c4cef4.871bb IDENTIFIER",
+            "type": "trigger",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Delay 1 min",
+            "op1": "",
+            "op2": "0",
+            "op1type": "nul",
+            "op2type": "str",
+            "duration": "2",
+            "extend": false,
+            "overrideDelay": false,
+            "units": "min",
+            "reset": "",
+            "bytopic": "all",
+            "topic": "topic",
+            "outputs": 1,
+            "x": 1290,
+            "y": 1540,
+            "wires": [
+                [
+                    "966f5c11.c7cd1 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "71d2788d.8210a8 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Busy ON",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "busy",
+                    "pt": "flow",
+                    "to": "1",
+                    "tot": "str"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 1080,
+            "y": 1540,
+            "wires": [
+                [
+                    "a1c4cef4.871bb IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "7c5a4b59.1cd014 IDENTIFIER",
+            "type": "function",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Controller",
+            "func": "desired = msg.payload\nvar fan\nvar aircon\nif (desired == '00') {\n    fan = '0'\n    aircon = '0'\n} else if (desired == '01') {\n    fan = '1'\n    aircon = '0'\n} else if (desired == '10') {\n    fan = '0'\n    aircon = '1'\n} else if (desired == '11') {\n    fan = '1'\n    aircon = '1'\n}\nreturn [{payload : fan}, {payload : aircon}, {payload : '1'}]",
+            "outputs": 3,
+            "noerr": 0,
+            "initialize": "",
+            "finalize": "",
+            "libs": [],
+            "x": 120,
+            "y": 1500,
+            "wires": [
+                [
+                    "2bf79970.26c4c6 IDENTIFIER"
+                ],
+                [
+                    "d37f8230.fc1c5 IDENTIFIER"
+                ],
+                [
+                    "4dbf8f6b.2210f IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "82dddb1f.28fe48 IDENTIFIER",
+            "type": "rbe",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Block no-change",
+            "func": "rbe",
+            "gap": "",
+            "start": "",
+            "inout": "out",
+            "septopics": true,
+            "property": "payload",
+            "x": 650,
+            "y": 1400,
+            "wires": [
+                [
+                    "7c5a4b59.1cd014 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "e0dc663c.d635c8 IDENTIFIER",
+            "type": "switch",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Human gating",
+            "property": "human",
+            "propertyType": "flow",
+            "rules": [
+                {
+                    "t": "eq",
+                    "v": "1",
+                    "vt": "str"
+                },
+                {
+                    "t": "else"
+                }
+            ],
+            "checkall": "true",
+            "repair": false,
+            "outputs": 2,
+            "x": 140,
+            "y": 1400,
+            "wires": [
+                [
+                    "82dddb1f.28fe48 IDENTIFIER"
+                ],
+                [
+                    "d503616e.30d78 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "d503616e.30d78 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Default",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "00",
+                    "tot": "str"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 400,
+            "y": 1420,
+            "wires": [
+                [
+                    "82dddb1f.28fe48 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "de0d37d7.c64778 IDENTIFIER",
+            "type": "func",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Processor",
+            "content": "dew = f.get('dew')\nif (dew == 'good') return\n\nlight = f.get('light')\nfan = f.get('fan')\naircon = f.get('aircon')\nlevel = aircon + fan\n\nif (light == '0') {\n    if (dew == 'cold') {\n        pl('00')\n    } else {\n        pl('10')\n    }\n} else {\n    if (dew == 'cold') {\n        switch (level) {\n            case '00':\n                return\n            case '01':\n                pl('00')\n                break\n            case '10':\n                pl('01')\n                break\n            case '11':\n                pl('10')\n                break\n        }\n    } else {\n        switch (level) {\n            case '00':\n                pl('01')\n                break\n            case '01':\n                pl('10')\n                break\n            case '10':\n                pl('11')\n                break\n            case '11':\n                return\n        }\n    }\n}",
+            "x": 120,
+            "y": 1340,
+            "wires": [
+                [
+                    "e0dc663c.d635c8 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "4601309a.d8c5f IDENTIFIER",
+            "type": "function",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Buffer 1",
+            "func": "return msg;",
+            "outputs": 1,
+            "noerr": 0,
+            "initialize": "",
+            "finalize": "",
+            "libs": [],
+            "x": 1080,
+            "y": 460,
+            "wires": [
+                [
+                    "992af202.b447c IDENTIFIER",
+                    "9bee935d.cbe62 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "992af202.b447c IDENTIFIER",
+            "type": "ui_text",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "77eac150.539df IDENTIFIER",
+            "order": 4,
+            "width": "0",
+            "height": "0",
+            "name": "Current 1",
+            "label": "Current",
+            "format": "{{msg.payload + \" °C\"}}",
+            "layout": "row-spread",
+            "x": 1300,
+            "y": 480,
+            "wires": []
+        },
+        {
+            "id": "76b8e353.afe40c IDENTIFIER",
+            "type": "function",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Buffer 2",
+            "func": "return msg;",
+            "outputs": 1,
+            "noerr": 0,
+            "initialize": "",
+            "finalize": "",
+            "libs": [],
+            "x": 1080,
+            "y": 540,
+            "wires": [
+                [
+                    "97d714ea.01ee88 IDENTIFIER",
+                    "9bee935d.cbe62 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "b6d46cb2.d53ff IDENTIFIER",
+            "type": "func",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Facbusy",
+            "content": "fanbusy = f.get('fanbusy')\nairconbusy = f.get('airconbusy')\nfacbusy = '0'\nif (fanbusy == '1' || airconbusy == '1') {\n    facbusy = '1'\n}\nf.set('facbusy', facbusy)",
+            "x": 1300,
+            "y": 1320,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "9cb418ba.153a68 IDENTIFIER",
+            "type": "ui_text",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "14c3ea19.486546 IDENTIFIER",
+            "order": 3,
+            "width": 0,
+            "height": 0,
+            "name": "Indicator",
+            "label": "{{msg.topic}}",
+            "format": "{{msg.payload}}",
+            "layout": "row-spread",
+            "x": 1300,
+            "y": 1240,
+            "wires": []
+        },
+        {
+            "id": "11b49878.983e38 IDENTIFIER",
+            "type": "func",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Level 0",
+            "content": "fan = f.get('fan')\naircon = f.get('aircon')\nlevel = aircon + fan\nswitch (level) {\n    case '00':\n        msg.topic = 'Level 0'\n        pl(\"Fan OFF / AIrcon OFF\")\n        break\n    case '01':\n        msg.topic = 'Level 1'\n        pl(\"Fan ON / AIrcon OFF\")\n        break\n    case '10':\n        msg.topic = 'Level 2'\n        pl(\"Fan OFF / AIrcon ON\")\n        break\n    case '11':\n        msg.topic = 'Level 3'\n        pl(\"Fan ON / AIrcon ON\")\n        break\n}",
+            "x": 1300,
+            "y": 1280,
+            "wires": [
+                [
+                    "9cb418ba.153a68 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "799a89e9.bb04b8 IDENTIFIER",
+            "type": "ui_template",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "60b0ef44.4985a8 IDENTIFIER",
+            "name": "Fan 2",
+            "order": 2,
+            "width": "2",
+            "height": "1",
+            "format": "<img src=\"https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/fan.png\" />",
+            "storeOutMessages": true,
+            "fwdInMessages": true,
+            "resendOnRefresh": true,
+            "templateScope": "local",
+            "x": 1310,
+            "y": 660,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "a43ce798.814728 IDENTIFIER",
+            "type": "ui_template",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "f8fddd42.cb90e8 IDENTIFIER",
+            "name": "Aircon 2",
+            "order": 2,
+            "width": "2",
+            "height": "1",
+            "format": "<img src=\"https://cdn.iconscout.com/icon/premium/png-512-thumb/aircon-1662491-1411677.png\" />",
+            "storeOutMessages": true,
+            "fwdInMessages": true,
+            "resendOnRefresh": true,
+            "templateScope": "local",
+            "x": 1300,
+            "y": 700,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "5410b314.19567c IDENTIFIER",
+            "type": "ui_template",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "d86b91c0.dd5a2 IDENTIFIER",
+            "name": "Human 1",
+            "order": 2,
+            "width": "2",
+            "height": "1",
+            "format": "<img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZEF5qhSdfiwYM0lM5Rh8CzreUS7NIPGd_Kw&usqp=CAU\" />",
+            "storeOutMessages": true,
+            "fwdInMessages": true,
+            "resendOnRefresh": true,
+            "templateScope": "local",
+            "x": 1300,
+            "y": 440,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "45b9296b.e45298 IDENTIFIER",
+            "type": "ui_template",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "d2753126.a608f IDENTIFIER",
+            "name": "Motion 1",
+            "order": 2,
+            "width": "2",
+            "height": "1",
+            "format": "<img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ9-j1wTSSEBJtZcJJgHcKhy7Et8y9lHgI1g&usqp=CAU\" />",
+            "storeOutMessages": true,
+            "fwdInMessages": true,
+            "resendOnRefresh": true,
+            "templateScope": "local",
+            "x": 1300,
+            "y": 400,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "5865ee94.40926 IDENTIFIER",
+            "type": "ui_template",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "3c989f2b.51439 IDENTIFIER",
+            "name": "Lighting 1",
+            "order": 2,
+            "width": "2",
+            "height": "1",
+            "format": "<img src=\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHsspe943OpigGSt1rWGEeb1R6zJqHFtYBnw&usqp=CAU\" />",
+            "storeOutMessages": true,
+            "fwdInMessages": true,
+            "resendOnRefresh": true,
+            "templateScope": "local",
+            "x": 1300,
+            "y": 360,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "8be7cd2c.ea208 IDENTIFIER",
+            "type": "ui_template",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "9c104cdc.5f6168 IDENTIFIER",
+            "name": "Comfortability 1",
+            "order": 2,
+            "width": "2",
+            "height": "1",
+            "format": "<img src=\"https://iconsplace.com/wp-content/uploads/_icons/00ff00/256/png/music-icon-3-256.png\" />",
+            "storeOutMessages": true,
+            "fwdInMessages": true,
+            "resendOnRefresh": true,
+            "templateScope": "local",
+            "x": 1280,
+            "y": 320,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "a8795cf8.4db3f IDENTIFIER",
+            "type": "ui_template",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "77eac150.539df IDENTIFIER",
+            "name": "Temperature 1",
+            "order": 2,
+            "width": "2",
+            "height": "1",
+            "format": "<img src=\"https://images.squarespace-cdn.com/content/5a4908d949fc2b8e312bdf53/1520677237474-NKBMQYEVM6YPE4Z49OCC/temp.png?content-type=image%2Fpng\" />",
+            "storeOutMessages": true,
+            "fwdInMessages": true,
+            "resendOnRefresh": true,
+            "templateScope": "local",
+            "x": 1280,
+            "y": 240,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "6bfdf691.5aef58 IDENTIFIER",
+            "type": "ui_template",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "61e7bea4.b3a398 IDENTIFIER",
+            "name": "Humidity 1",
+            "order": 2,
+            "width": "2",
+            "height": "1",
+            "format": "<img src=\"https://aryadarpan.avmschools.ac.in/wp-content/uploads/2020/01/water-drops-icon-8.jpg\" />",
+            "storeOutMessages": true,
+            "fwdInMessages": true,
+            "resendOnRefresh": true,
+            "templateScope": "local",
+            "x": 1290,
+            "y": 280,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "a22ae108.27b4d IDENTIFIER",
+            "type": "mqtt in",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Version 0",
+            "topic": "Version/IDENTIFIER",
+            "qos": "1",
+            "datatype": "utf8",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "nl": false,
+            "rap": true,
+            "rh": 0,
+            "x": 120,
+            "y": 40,
+            "wires": [
+                [
+                    "4d00341c.2cbf3c IDENTIFIER",
+                    "acb3be15.78b4b IDENTIFIER",
+                    "eb74ad7e.f0119 IDENTIFIER",
+                    "813fb17c.85995 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "823f8712.7838e8 IDENTIFIER",
+            "type": "mqtt in",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Fan 0",
+            "topic": "Fan/IDENTIFIER",
+            "qos": "1",
+            "datatype": "utf8",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "nl": false,
+            "rap": true,
+            "rh": 0,
+            "x": 110,
+            "y": 200,
+            "wires": [
+                [
+                    "8251cca2.67a53 IDENTIFIER",
+                    "6894d57a.b0173c IDENTIFIER",
+                    "aba32d32.c2695 IDENTIFIER",
+                    "13e198a9.396e77 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "1853a422.abc3ac IDENTIFIER",
+            "type": "mqtt in",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Aircon 0",
+            "topic": "Aircon/IDENTIFIER",
+            "qos": "1",
+            "datatype": "utf8",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "nl": false,
+            "rap": true,
+            "rh": 0,
+            "x": 120,
+            "y": 320,
+            "wires": [
+                [
+                    "1141137c.c301ed IDENTIFIER",
+                    "4d55f479.cdfdac IDENTIFIER",
+                    "194cb03c.8f39a IDENTIFIER",
+                    "b1c7521d.788ec IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "13c56d14.3e40b3 IDENTIFIER",
+            "type": "mqtt in",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Fan-busy",
+            "topic": "Fan-busy/IDENTIFIER",
+            "qos": "1",
+            "datatype": "utf8",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "nl": false,
+            "rap": true,
+            "rh": 0,
+            "x": 120,
+            "y": 260,
+            "wires": [
+                [
+                    "aa2042ae.cf914 IDENTIFIER",
+                    "52d1646d.5b57fc IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "5a6b56a4.a0c958 IDENTIFIER",
+            "type": "mqtt in",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Aircon-busy",
+            "topic": "Aircon-busy/IDENTIFIER",
+            "qos": "1",
+            "datatype": "utf8",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "nl": false,
+            "rap": true,
+            "rh": 0,
+            "x": 130,
+            "y": 380,
+            "wires": [
+                [
+                    "a5b3a4b5.e250f8 IDENTIFIER",
+                    "4191f0ff.567ee IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "1a5eb0a8.c700ef IDENTIFIER",
+            "type": "mqtt in",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Temperature 0",
+            "topic": "Temperature/IDENTIFIER",
+            "qos": "1",
+            "datatype": "utf8",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "nl": false,
+            "rap": true,
+            "rh": 0,
+            "x": 130,
+            "y": 440,
+            "wires": [
+                [
+                    "4601309a.d8c5f IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "8fb6639f.7794a IDENTIFIER",
+            "type": "mqtt in",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Humidity 0",
+            "topic": "Humidity/IDENTIFIER",
+            "qos": "1",
+            "datatype": "utf8",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "nl": false,
+            "rap": true,
+            "rh": 0,
+            "x": 120,
+            "y": 520,
+            "wires": [
+                [
+                    "76b8e353.afe40c IDENTIFIER",
+                    "a28a7763.f34a08 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "9b8e641d.326d78 IDENTIFIER",
+            "type": "mqtt in",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Lighting 0",
+            "topic": "Lighting/IDENTIFIER",
+            "qos": "1",
+            "datatype": "utf8",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "nl": false,
+            "rap": true,
+            "rh": 0,
+            "x": 120,
+            "y": 600,
+            "wires": [
+                [
+                    "2efaa808.646778 IDENTIFIER",
+                    "b994cd9c.a7f4e IDENTIFIER",
+                    "af4a0bfb.d91268 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "96ec3706.118938 IDENTIFIER",
+            "type": "mqtt in",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Motion 0",
+            "topic": "Motion/IDENTIFIER",
+            "qos": "1",
+            "datatype": "utf8",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "nl": false,
+            "rap": true,
+            "rh": 0,
+            "x": 120,
+            "y": 680,
+            "wires": [
+                [
+                    "8600b4f.b323148 IDENTIFIER",
+                    "6c0c243e.868b9c IDENTIFIER",
+                    "9dde39e7.b60818 IDENTIFIER",
+                    "3aef38ff.e35ad8 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "a2ccf75f.ba78a8 IDENTIFIER",
+            "type": "mqtt in",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Fan-ready",
+            "topic": "Fan-ready/IDENTIFIER",
+            "qos": "1",
+            "datatype": "utf8",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "nl": false,
+            "rap": true,
+            "rh": 0,
+            "x": 120,
+            "y": 780,
+            "wires": [
+                [
+                    "f4d3b93d.ca73a8 IDENTIFIER",
+                    "2e622328.b223cc IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "2b0446e.1e8bcba IDENTIFIER",
+            "type": "mqtt in",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Aircon-ready",
+            "topic": "Aircon-ready/IDENTIFIER",
+            "qos": "1",
+            "datatype": "utf8",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "nl": false,
+            "rap": true,
+            "rh": 0,
+            "x": 130,
+            "y": 840,
+            "wires": [
+                [
+                    "a42a816e.262 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "9a125475.435c98 IDENTIFIER",
+            "type": "mqtt in",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Connection 0",
+            "topic": "Connection/IDENTIFIER",
+            "qos": "1",
+            "datatype": "utf8",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "nl": false,
+            "rap": true,
+            "rh": 0,
+            "x": 130,
+            "y": 900,
+            "wires": [
+                [
+                    "8efb905a.2b1c1 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "afd5b603.24a768 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Initially not busy",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "busy",
+                    "pt": "flow",
+                    "to": "0",
+                    "tot": "str"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 380,
+            "y": 1020,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "c4d3de04.16d9f IDENTIFIER",
+            "type": "ui_slider",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Adjust",
+            "label": "Adjust",
+            "tooltip": "",
+            "group": "ca32f298.e11c3 IDENTIFIER",
+            "order": 1,
+            "width": 0,
+            "height": 0,
+            "passthru": true,
+            "outs": "end",
+            "topic": "topic",
+            "topicType": "msg",
+            "min": "1",
+            "max": "5",
+            "step": "1",
+            "x": 110,
+            "y": 1120,
+            "wires": [
+                [
+                    "b988c525.29eb58 IDENTIFIER",
+                    "7c44cc64.e04ca4 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "b988c525.29eb58 IDENTIFIER",
+            "type": "switch",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "MUX 2",
+            "property": "payload",
+            "propertyType": "msg",
+            "rules": [
+                {
+                    "t": "eq",
+                    "v": "1",
+                    "vt": "num"
+                },
+                {
+                    "t": "eq",
+                    "v": "2",
+                    "vt": "num"
+                },
+                {
+                    "t": "eq",
+                    "v": "3",
+                    "vt": "num"
+                },
+                {
+                    "t": "eq",
+                    "v": "4",
+                    "vt": "num"
+                },
+                {
+                    "t": "eq",
+                    "v": "5",
+                    "vt": "num"
+                }
+            ],
+            "checkall": "false",
+            "repair": false,
+            "outputs": 5,
+            "x": 110,
+            "y": 1260,
+            "wires": [
+                [
+                    "e037c987.f83ee8 IDENTIFIER"
+                ],
+                [
+                    "b7d9f2a7.a05b3 IDENTIFIER"
+                ],
+                [
+                    "2ef1eea6.605092 IDENTIFIER"
+                ],
+                [
+                    "654e7bf9.670804 IDENTIFIER"
+                ],
+                [
+                    "26559dea.5ea622 IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "e037c987.f83ee8 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Coolest",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "modifier",
+                    "pt": "flow",
+                    "to": "3",
+                    "tot": "num"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 400,
+            "y": 1180,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "2ef1eea6.605092 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Neutral",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "modifier",
+                    "pt": "flow",
+                    "to": "0",
+                    "tot": "num"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 400,
+            "y": 1260,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "b7d9f2a7.a05b3 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Cooler",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "modifier",
+                    "pt": "flow",
+                    "to": "1.5 IDENTIFIER",
+                    "tot": "num"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 410,
+            "y": 1220,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "654e7bf9.670804 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Warmer",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "modifier",
+                    "pt": "flow",
+                    "to": "-1.5 IDENTIFIER",
+                    "tot": "num"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 400,
+            "y": 1300,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "26559dea.5ea622 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Warmest",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "modifier",
+                    "pt": "flow",
+                    "to": "-3",
+                    "tot": "num"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 400,
+            "y": 1340,
+            "wires": [
+                []
+            ]
+        },
+        {
+            "id": "7c44cc64.e04ca4 IDENTIFIER",
+            "type": "ui_text",
+            "z": "61849262.ed701c IDENTIFIER",
+            "group": "ca32f298.e11c3 IDENTIFIER",
+            "order": 2,
+            "width": 0,
+            "height": 0,
+            "name": "Bias",
+            "label": "Applied Policy",
+            "format": "{{msg.payload == 1 ? \"Coolest\" : msg.payload == 2 ? \"Cooler\" : msg.payload == 4 ? \"Warmer\" : msg.payload == 5 ? \"Warmest\" : \"Neutral\"}} ",
+            "layout": "row-spread",
+            "x": 110,
+            "y": 1180,
+            "wires": []
+        },
+        {
+            "id": "dedbdec6.d7067 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Disable 1",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "enabled",
+                    "pt": "msg",
+                    "to": "false",
+                    "tot": "bool"
+                },
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "3",
+                    "tot": "num"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 120,
+            "y": 1060,
+            "wires": [
+                [
+                    "c4d3de04.16d9f IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "f4d3b93d.ca73a8 IDENTIFIER",
+            "type": "change",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Enable 4",
+            "rules": [
+                {
+                    "t": "set",
+                    "p": "enabled",
+                    "pt": "msg",
+                    "to": "true",
+                    "tot": "bool"
+                },
+                {
+                    "t": "set",
+                    "p": "payload",
+                    "pt": "msg",
+                    "to": "3",
+                    "tot": "num"
+                }
+            ],
+            "action": "",
+            "property": "",
+            "from": "",
+            "to": "",
+            "reg": false,
+            "x": 120,
+            "y": 1020,
+            "wires": [
+                [
+                    "c4d3de04.16d9f IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "bcc5a9b7.23c778 IDENTIFIER",
+            "type": "ui_button",
+            "z": "61849262.ed701c IDENTIFIER",
+            "d": true,
+            "name": "Update",
+            "group": "9d3ce45b.c410b IDENTIFIER",
+            "order": 3,
+            "width": "17",
+            "height": "1",
+            "passthru": false,
+            "label": "Get update",
+            "tooltip": "",
+            "color": "",
+            "bgcolor": "",
+            "icon": "",
+            "payload": "1",
+            "payloadType": "str",
+            "topic": "topic",
+            "topicType": "msg",
+            "x": 1080,
+            "y": 80,
+            "wires": [
+                [
+                    "9912d27e.0342c IDENTIFIER"
+                ]
+            ]
+        },
+        {
+            "id": "9912d27e.0342c IDENTIFIER",
+            "type": "mqtt out",
+            "z": "61849262.ed701c IDENTIFIER",
+            "d": true,
+            "name": "Ota-control",
+            "topic": "Ota-control/IDENTIFIER",
+            "qos": "1",
+            "retain": "false",
+            "respTopic": "",
+            "contentType": "",
+            "userProps": "",
+            "correl": "",
+            "expiry": "",
+            "broker": "ec6c8974.8d32b IDENTIFIER",
+            "x": 1290,
+            "y": 80,
+            "wires": []
+        }
+    ],
+    "configs": [
+        {
+            "id": "e2f1e44d.4c1e78 IDENTIFIER",
+            "type": "ui_tab",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "UI Prototype",
+            "icon": "dashboard",
+            "disabled": false,
+            "hidden": false
+        },
+        {
+            "id": "a8e3df71.38f158 IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Version",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 2,
+            "disp": true,
+            "width": "17",
+            "collapse": false
+        },
+        {
+            "id": "77eac150.539df IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Temperature",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 5,
+            "disp": true,
+            "width": "17",
+            "collapse": false
+        },
+        {
+            "id": "3c989f2b.51439 IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Lighting",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 8,
+            "disp": true,
+            "width": "17",
+            "collapse": false
+        },
+        {
+            "id": "d2753126.a608f IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Motion",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 9,
+            "disp": true,
+            "width": "17",
+            "collapse": false
+        },
+        {
+            "id": "60b0ef44.4985a8 IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Fan",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 11,
+            "disp": true,
+            "width": "17",
+            "collapse": false
+        },
+        {
+            "id": "f8fddd42.cb90e8 IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Aircon",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 12,
+            "disp": true,
+            "width": "17",
+            "collapse": false
+        },
+        {
+            "id": "9d3ce45b.c410b IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Ota",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 13,
+            "disp": true,
+            "width": "17",
+            "collapse": false
+        },
+        {
+            "id": "fac9ed79.7aeff IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Reset",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 15,
+            "disp": true,
+            "width": "17",
+            "collapse": false
+        },
+        {
+            "id": "6e854e20.0c9b58 IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Connection",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 1,
+            "disp": true,
+            "width": "17",
+            "collapse": false
+        },
+        {
+            "id": "cea5a972.2b21 IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Try",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 16,
+            "disp": true,
+            "width": "6",
+            "collapse": false
+        },
+        {
+            "id": "61e7bea4.b3a398 IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Humidity",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 6,
+            "disp": true,
+            "width": "17",
+            "collapse": false
+        },
+        {
+            "id": "9c104cdc.5f6168 IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Comfortability",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 7,
+            "disp": true,
+            "width": "17",
+            "collapse": false
+        },
+        {
+            "id": "d86b91c0.dd5a2 IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Human",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 10,
+            "disp": true,
+            "width": "17",
+            "collapse": false
+        },
+        {
+            "id": "14c3ea19.486546 IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Level",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 4,
+            "disp": true,
+            "width": "17",
+            "collapse": false
+        },
+        {
+            "id": "4b977bdc.8b6e04 IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Control",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 3,
+            "disp": true,
+            "width": "17",
+            "collapse": false
+        },
+        {
+            "id": "b8ef85c.3267078 IDENTIFIER",
+            "type": "ui_spacer",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "spacer",
+            "group": "77eac150.539df IDENTIFIER",
+            "order": 1,
+            "width": "14",
+            "height": 1
+        },
+        {
+            "id": "b4e5a45.6cc3458 IDENTIFIER",
+            "type": "ui_spacer",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "spacer",
+            "group": "61e7bea4.b3a398 IDENTIFIER",
+            "order": 1,
+            "width": "14",
+            "height": 1
+        },
+        {
+            "id": "378d0a3d.4868a6 IDENTIFIER",
+            "type": "ui_spacer",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "spacer",
+            "group": "9c104cdc.5f6168 IDENTIFIER",
+            "order": 1,
+            "width": "14",
+            "height": 1
+        },
+        {
+            "id": "391fc5ec.fe031a IDENTIFIER",
+            "type": "ui_spacer",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "spacer",
+            "group": "3c989f2b.51439 IDENTIFIER",
+            "order": 1,
+            "width": "14",
+            "height": 1
+        },
+        {
+            "id": "3d068845.5ed818 IDENTIFIER",
+            "type": "ui_spacer",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "spacer",
+            "group": "d2753126.a608f IDENTIFIER",
+            "order": 1,
+            "width": "14",
+            "height": 1
+        },
+        {
+            "id": "2c47ca51.90c426 IDENTIFIER",
+            "type": "ui_spacer",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "spacer",
+            "group": "d86b91c0.dd5a2 IDENTIFIER",
+            "order": 1,
+            "width": "14",
+            "height": 1
+        },
+        {
+            "id": "4ea176c0.71d688 IDENTIFIER",
+            "type": "ui_spacer",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "spacer",
+            "group": "60b0ef44.4985a8 IDENTIFIER",
+            "order": 1,
+            "width": "14",
+            "height": 1
+        },
+        {
+            "id": "c17cb947.72ecd8 IDENTIFIER",
+            "type": "ui_spacer",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "spacer",
+            "group": "f8fddd42.cb90e8 IDENTIFIER",
+            "order": 1,
+            "width": "14",
+            "height": 1
+        },
+        {
+            "id": "ca32f298.e11c3 IDENTIFIER",
+            "type": "ui_group",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "Preference",
+            "tab": "e2f1e44d.4c1e78 IDENTIFIER",
+            "order": 14,
+            "disp": true,
+            "width": "17",
+            "collapse": false
+        },
+        {
+            "id": "80da0abb.01dbf8 IDENTIFIER",
+            "type": "ui_spacer",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "spacer",
+            "group": "fac9ed79.7aeff IDENTIFIER",
+            "order": 1,
+            "width": "17",
+            "height": "1"
+        },
+        {
+            "id": "c6b8960f.66e3c8 IDENTIFIER",
+            "type": "ui_spacer",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "spacer",
+            "group": "60b0ef44.4985a8 IDENTIFIER",
+            "order": 11,
+            "width": "17",
+            "height": 1
+        },
+        {
+            "id": "baf18fb4.080af IDENTIFIER",
+            "type": "ui_spacer",
+            "z": "61849262.ed701c IDENTIFIER",
+            "name": "spacer",
+            "group": "f8fddd42.cb90e8 IDENTIFIER",
+            "order": 12,
+            "width": "17",
+            "height": 1
+        }
+    ]
+}
