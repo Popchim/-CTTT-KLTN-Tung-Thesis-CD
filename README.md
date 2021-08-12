@@ -2,7 +2,7 @@
 
 Contact Info
 
-	Full name	: Nguyen thanh Tung
+	Full name	: Nguyen Thanh Tung
 	Mobile phone	: 07.07.07.6350
 	Email		: gooooogle1503@gmail.com
 
